@@ -1,0 +1,96 @@
+.footer {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #6c757d;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   
+}
+
+.email-input {
+    position: relative;
+}
+
+.email-input input {
+    width: 23rem;
+    border-style: none;
+    outline: none;
+    padding: 15px 40px 15px 15px;
+    font-size: 1.2rem;
+    background-color: black;
+    border: 2px solid #495057;
+    color: #6c757d;
+}
+
+.email-input i {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.2rem;
+    color: #495057;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+    line-height: 2.5;
+}
+.footer-middle > div:not(.footer-middle div:last-child) {
+    border-right: 1px solid #6c757d;
+    padding-right: 5rem;
+}
+
+.footer-middle > div {
+   max-width: 25rem;
+    text-align: center;
+}
+
+.footer-middle div:nth-child(2) h1 {
+    color: #ca6702;
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'Great Vibes', cursive;
+}
+.footer-middle div p {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.footer > p {
+    color: #6c757d;
+    text-align: center;
+    padding: 2rem;
+    background-color: black;
+}
+
+@media screen and (max-width:576px) {
+    .email-input {
+        margin-top: 2rem;
+    }
+    .footer-middle > div:not(.footer-middle div:last-child){
+        border-right: none;
+        padding-right: 0;
+    }
+    .footer-middle > div {
+        text-align: center;
+    }
+    .footer-middle div h1, .footer-middle div p {
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,61 @@
+.block-chef {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.cheff {
+    margin-top: 3rem;
+}
+.cheff > h1, .cheff > p {
+    text-align: center;
+}
+.cheff > h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #d5bdaf;
+}
+.cheff > p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.chef {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.chef img {
+    max-width: 20rem;
+    object-fit: cover;
+    height: 30rem;
+    transition: transform .3s ease;
+}
+
+.name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #faedcd;
+    border-bottom: 5px solid #bc6c25;
+    transform: translateY(100%);
+    transition: transform .5s ease;
+
+}
+.chef:hover .name {
+    position: absolute;
+    top: 24rem;
+}
+
+.chef:hover img {
+    transform: scale(1.1);
+  }
+  
+  .chef:hover .name {
+    transform: translateY(0);
+  }

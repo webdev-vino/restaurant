@@ -1,0 +1,57 @@
+
+.quality h1 {
+    text-align: center;
+    margin: 2rem 0 0;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #d5bdaf;
+}
+.quality h3 {
+    text-align: center;
+    font-size: 2.3rem;
+}
+.container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 5rem 2rem;
+}
+
+.food {
+    
+  width: 23rem;
+  margin: 1rem 1rem;
+  border: 1px solid #adb5bd;
+  padding: 2rem 2rem;
+  line-height: 2;
+}
+
+.food i {
+    font-size: 2.5rem;
+}
+.food h2 {
+  padding: 1rem 0 2rem 0;
+}
+.food p {
+    color: #6c757d;
+}
+
+.food:hover h2 {
+    color: #e09f3e; 
+    transition: .3s ease-out;  
+}
+.food:hover {
+    box-shadow:3px 0 5px 3px  #e09f3e;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        margin: 3rem 0 2rem;
+    }
+    .food {
+        max-width: 20rem;
+    }
+}
+

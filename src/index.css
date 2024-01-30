@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +19,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import "./components/navbar.css";
+@import "./components/homepage.css";
+@import "./components/header.css";
+@import "./components/history.css";
+@import "./components/quality.css";
+@import "./components/cheff.css";
+@import "./components/footer.css";

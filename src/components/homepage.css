@@ -1,0 +1,80 @@
+.homepage {
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Ensure that overflow does not affect the layout */
+}
+
+.homepage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+     /* Adjust the transition duration as needed */
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: transform 10s ease;
+}
+
+.zoom-in {
+    transform: scale(1.1);
+   opacity: 1;
+
+}
+
+.homepage article { 
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.homepage h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: #e09f3e;
+    font-weight: 100;
+}
+.homepage h2 {
+    color: white;
+    font-size: 4rem;
+}
+
+.homepage section {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+@media screen and (max-width:768px) {
+    .homepage h2 {
+        font-size: 3rem;
+    }
+    .homepage {
+        height: 70vh;
+    }
+    
+} 
+
+@media screen and (max-width: 576px) {
+    .homepage {
+        height: 50vh;
+    }
+    .homepage img {
+        height: 20rem;
+    }
+    .homepage h1 {
+        font-size: 2rem;
+    }
+    .homepage h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
